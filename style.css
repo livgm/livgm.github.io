@@ -70,3 +70,5 @@
     stroke-dashoffset: 1000;
     animation: dash 1s 6s linear forwards;
 }
+
+svg {width: 100%; height: 100vh;}
