@@ -7,68 +7,51 @@
   }
 }
 
-.hi {
+.header{
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
+}
+.hi {
   animation: dash 5s linear forwards;
 }
 
 .comma {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
   animation: dash 1s 2s linear forwards;
 }
 
 .its {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
   animation: dash 5s 2.3s linear forwards;
 }
 
 .liv {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
   animation: dash 5s 3.7s linear forwards;
 }
 
-.dot4 {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 7s 6.3s linear forwards;
-}
-
 .dot1 {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
   animation: dash 1s 1.5s linear forwards;
 }
 
 .dot2 {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
   animation: dash 1s 2.5s linear forwards;
 }
 .dot3 {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
   animation: dash 1s 5s linear forwards;
 }
 
+.dot4 {
+  animation: dash 7s 6.3s linear forwards;
+}
 .t{
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
     animation: dash 1s 2.6s linear forwards;
 }
 .apostrophe{
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 1s 4.8s linear forwards;
+    animation: dash 1s 3.5s linear forwards;
 }
 
 .exclamation{
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
     animation: dash 1s 6s linear forwards;
 }
 
-svg {width: 100%; height: 100vh;}
+svg {
+  width: 100%; height: 100vh;
+}
