@@ -64,13 +64,14 @@
 
 hr{
   width: 90%;
-  display: flex;
+  border: 2px solid black;
 }
 
 :root {
   --white: #fff;
-  --black: #221f1f;
+  --black: #000033;
   --lightpurple: #9e91f2;
+  --accent: #D64550;
 }
 
 button {
@@ -222,27 +223,33 @@ body {
 }
 
 section{
-  width: 100vw;
+  width: 98vw;
   color: black;
   display: flex;
   flex-direction: row;
   align-content: space-between;
+  font-family: 'Raleway', sans-serif;
 }
 
 section .prompt{
-  padding: 4em;
-  font-size: 60;
+  max-width: 50%;
+  min-width: 25%;
+  margin: 2em;
+  font-size: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  font-weight: bolder;
 }
 
 section .text{
-  min-width: 70%;
-  padding: 4em;
-  font-size: 40;
+  min-width: 50%;
+  margin: 2em ;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
