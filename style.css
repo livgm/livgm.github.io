@@ -55,12 +55,12 @@
 .header svg {
   width: 100%; height: 100vh;
 }
-
+/*
 .intro{
   font-size: 40px;
   height: 100vh;
 }
-
+*/
 
 hr{
   width: 90%;
@@ -163,9 +163,15 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.page-main section {
+@media (max-width: 800px){
+  .page-main section {
   position: relative;
-  height: 100vh;
+  height: 50vh;
+}
+}
+.page-main section {
+position: relative;
+height: 100vh;
 }
 
 .page-main section::before {
