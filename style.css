@@ -222,14 +222,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-section{
-  width: 98vw;
-  color: black;
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
-  font-family: 'Raleway', sans-serif;
-}
 
 section .prompt{
   max-width: 50%;
@@ -237,7 +229,7 @@ section .prompt{
   margin: 2em;
   font-size: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -255,4 +247,13 @@ section .text{
   align-items: center;
   align-content: center;
   justify-content: center;
+}
+
+.info{
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  color: black;
 }
