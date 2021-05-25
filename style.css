@@ -10,6 +10,7 @@
 .anim{
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
+  stroke-linecap: round;
 }
 .hi {
   animation: dash 5s linear forwards;
@@ -55,17 +56,7 @@
 .header svg {
   width: 100%; height: 100vh;
 }
-/*
-.intro{
-  font-size: 40px;
-  height: 100vh;
-}
-*/
 
-hr{
-  width: 90%;
-  border: 2px solid black;
-}
 
 :root {
   --white: #fff;
@@ -74,95 +65,12 @@ hr{
   --accent: #D64550;
 }
 
-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 body {
   position: relative;
-  font: 16px/1.5 sans-serif;
-  color: var(--white);
+  font: 1.5em Raleway;
+  color: var(--black);
 }
 
-.trigger-menu-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  padding: 20px;
-  z-index: 2;
-  background: transparent;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
-}
-
-.page-header .trigger-menu {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  font-size: 1.3rem;
-  color: var(--white);
-  letter-spacing: .2em;
-}
-
-.page-header .trigger-menu svg {
-  fill: var(--white);
-  margin-right: 8px;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-.page-header .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: none;
-  text-align: center;
-  padding: 15vh 0 5vh;
-  overflow: auto;
-  z-index: 1;
-  background: var(--black);
-}
-
-.page-header .menu a {
-  font-size: 3rem;
-}
-
-.page-header .sub-menu a {
-  font-size: 1.5rem;
-}
-
-.sub-menu{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 @media (max-width: 1200px){
   .page-main section {
   position: relative;
@@ -172,15 +80,6 @@ body {
 .page-main section {
 position: relative;
 height: 100vh;
-}
-
-.page-main section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 /* FOOTER
@@ -194,72 +93,4 @@ height: 100vh;
 
 .page-footer span {
   color: #e31b23;
-}
-
-.menu-open {
-  overflow: hidden;
-}
-
-.menu-open .trigger-menu-wrapper {
-  background: var(--black);
-}
-
-.menu-open .page-header .menu {
-  display: block;
-}
-
-.menu-open .page-header svg {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.scroll-down .trigger-menu-wrapper {
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-}
-
-.scroll-up .trigger-menu-wrapper {
-  -webkit-transform: none;
-          transform: none;
-}
-
-.scroll-up:not(.menu-open) .trigger-menu-wrapper {
-  background: var(--black);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-
-section .prompt{
-  max-width: 50%;
-  min-width: 25%;
-  margin: 2em;
-  font-size: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-  font-weight: bolder;
-}
-
-section .text{
-  min-width: 50%;
-  margin: 2em ;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.info{
-  min-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Raleway', sans-serif;
-  color: black;
 }
